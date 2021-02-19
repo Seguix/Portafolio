@@ -1,0 +1,12 @@
+<div fxLayout="column" fxLayoutAlign="center center">
+    <h2 class="title-interested">¿Interesado en trabajar juntos?</h2>
+    <h3 class="title-contact">Contactame</h3>
+
+   
+    <div fxLayout="row wrap" fxLayoutAlign="start center" class="container-social-media">
+        <div *ngFor="let contact of contacts" fxFlex="0 1 calc(33.33% - 1px)" fxFlex.xs="100" class="container-link-img">
+            <a [href]="contact.url" [target]="contact.target"><img [src]="contact.img" [alt]="contact.name" class="img-social-media"></a>
+            <h2 class="name-social-media">{{contact.name}}</h2>
+        </div>
+    </div>
+</div>

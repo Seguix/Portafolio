@@ -1,0 +1,222 @@
+@import 'font-roboto.css';
+@import '~animate.css/animate.min';
+
+* {
+    margin: 0;
+    font-family: 'Roboto', 'arial', sans-serif;
+    overflow-x: hidden;
+}
+
+.background-port {
+    background-color: #151515;
+    position: relative;
+}
+
+.animated {
+    visibility: visible !important;
+}
+
+.hide-on-init {
+    visibility: hidden;
+}
+
+.fig-content-1 {
+    position: absolute;
+
+    img {
+        width: 80%;
+    }
+}
+
+.fig-content-2 {
+    position: absolute;
+    display: flex;
+    place-content: flex-end;
+    bottom: -11vh;
+    right: 0;
+
+    img {
+        width: 70%;
+    }
+}
+
+.fig-content-3 {
+    position: absolute;
+    display: flex;
+    place-content: flex-end;
+    top: -9vh;
+    right: 0;
+
+    img {
+        width: 70%;
+    }
+}
+
+.fig-content-4 {
+    position: absolute;
+    bottom: -5vh;
+    left: 0;
+
+    img {
+        width: 70%;
+    }
+}
+
+.fig-content-5 {
+    position: absolute;
+    display: flex;
+    place-content: flex-end;
+    bottom: -13vh;
+    right: 0;
+
+    img {
+        width: 30%;
+    }
+}
+
+.section-name {
+    height: 100vh;
+
+    .name {
+        font-size: 2.9em;
+        margin-block-end: 0.2em;
+        color: #74c60d;
+    }
+
+    .profesion {
+        font-size: 1.45em;
+        color: #d7eff0;
+        font-weight: 300;
+    }
+}
+
+.relative-figures {
+    position: relative;
+    overflow: visible;
+}
+
+.padding-section {
+    height: auto;
+    padding: 37px;
+}
+
+.background-me {
+    background: rgb(40,220,243);
+    background: linear-gradient(171deg, rgba(40,220,243,1) 0%, rgba(51,168,185,1) 50%, rgba(32,136,156,1) 100%);
+}
+
+@media screen and (min-width: 960px) and (max-width: 1279px) {
+    .fig-content-1 {
+        img {
+            width: 65%;
+        }
+    }
+
+    .fig-content-2 {
+        img {
+            width: 55%;
+        }
+    }
+
+    .fig-content-3 {
+        img {
+            width: 45%;
+        }
+    }
+
+    .fig-content-4 {
+        img {
+            width: 50%;
+        }
+    }
+
+    .fig-content-5 {
+        img {
+            width: 27%;
+        }
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 959px) {
+    .fig-content-1 {
+        img  {
+            width: 65%;
+        }
+    }
+
+    .fig-content-2 {
+        img {
+            width: 50%;
+        }
+    }
+
+    .fig-content-3 {
+        top: -8vh;
+
+        img {
+            width: 40%;
+        }
+    }
+
+    .fig-content-4 {
+        bottom: -4vh;
+
+        img {
+            width: 40%;
+        }
+    }
+
+    .fig-content-5 {
+        bottom: -8vh;
+
+        img {
+            width: 20%;
+        }
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .fig-content-1 {
+        img {
+            width: 65%;
+        }
+    }
+
+    .fig-content-2 {
+        bottom: -6.5vh;
+
+        img {
+            width: 60%;
+        }
+    }
+
+    .fig-content-3 {
+        top: -4vh;
+
+        img {
+            width: 30%;
+        }
+    }
+
+    .fig-content-4 {
+        bottom: -3vh;
+
+        img {
+            width: 30%;
+        }
+    }
+
+    .fig-content-5 {
+        bottom: -5vh;
+
+        img {
+            width: 25%;
+        }
+    }
+    
+    .section-name {
+        .name {
+            font-size: 2.25em;
+        }
+    }
+}

@@ -1,0 +1,62 @@
+.container-social-media {
+    position: absolute;
+    right: 35px;
+    
+    .spacing-social-media {
+        margin-top: 25px;
+
+        .link-social-media {
+            margin-left: 30px;
+    
+            .fa-facebook {
+                color: #4267B2;
+                font-size: 2.2em;
+            }
+    
+            .fa-instagram {
+                color: #C13584;
+                font-size: 2.2em;
+            }
+            
+            .fa-twitter {
+                color: #1DA1F2;
+                font-size: 2.2em;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 959px) {
+    .container-social-media {
+        right: 33px;
+
+        .spacing-social-media {
+            .link-social-media {
+                .fa-facebook,
+                .fa-instagram,
+                .fa-twitter {
+                    font-size: 2em;
+                }
+            }
+        }
+    }
+} 
+
+@media screen and (max-width: 599px) {
+    .container-social-media {
+        right: 13px;
+
+        .spacing-social-media {
+            margin-top: 15px;
+            .link-social-media {
+                margin-left: 17px;
+
+                .fa-facebook,
+                .fa-instagram,
+                .fa-twitter {
+                    font-size: 1.65em;
+                }
+            }
+        }
+    }
+}
