@@ -8,30 +8,17 @@ import { Component, OnInit } from '@angular/core';
 export class JobCardsComponent implements OnInit {
   public projects = [
     {
-      name: 'RGA', url: 'https://rga-app.herokuapp.com/', img: ['src\assets\images\rga-1.PNG'],
-      description: 'Estudios a distancia', repo: 'https://github.com/TheRogerize/RGA_ToolApp',
+      name: 'RGA', url: 'https://rga-app.herokuapp.com/', img: 'assets/images/rga-1.PNG',
+      description: 'RGA es una aplicación web destinada a profesores, estudiantes y universidades.', 
+      repo: 'https://github.com/TheRogerize/RGA_ToolApp',
       languages: ['assets/svg/html.svg', 'assets/svg/css.svg', 'assets/svg/js.svg', 'assets/svg/vuejs.svg', 'assets/svg/vuetify.svg']
     },
-    // {
-    //   name: 'RGA', url: 'https://rga-app.herokuapp.com/', img: ['src\assets\images\rga-1.PNG'], 
-    //   description: 'Estudios a distancia', 
-    //   languages: ['assets/svg/html.svg', 'assets/svg/css.svg', 'assets/svg/js.svg', 'assets/svg/vuejs.svg', 'assets/svg/vuetify.svg']
-    // },
-    // {
-    //   name: 'RGA', url: 'https://rga-app.herokuapp.com/', img: ['src\assets\images\rga-1.PNG'], 
-    //   description: 'Estudios a distancia', 
-    //   languages: ['assets/svg/html.svg', 'assets/svg/css.svg', 'assets/svg/js.svg', 'assets/svg/vuejs.svg', 'assets/svg/vuetify.svg']
-    // },
-    // {
-    //   name: 'RGA', url: 'https://rga-app.herokuapp.com/', img: ['src\assets\images\rga-1.PNG'], 
-    //   description: 'Estudios a distancia', 
-    //   languages: ['assets/svg/html.svg', 'assets/svg/css.svg', 'assets/svg/js.svg', 'assets/svg/vuejs.svg', 'assets/svg/vuetify.svg']
-    // },
-    // {
-    //   name: 'RGA', url: 'https://rga-app.herokuapp.com/', img: ['src\assets\images\rga-1.PNG'], 
-    //   description: 'Estudios a distancia', 
-    //   languages: ['assets/svg/html.svg', 'assets/svg/css.svg', 'assets/svg/js.svg', 'assets/svg/vuejs.svg', 'assets/svg/vuetify.svg']
-    // },
+    {
+      name: 'Pokedex', url: 'https://national-pokedex.netlify.app/', img: 'assets/images/pokedex.png',
+      description: 'Permite consultar los stats de cualquier Pokemon mediante su nombre o id en la pokedex nacional.',
+      repo: 'https://github.com/Seguix/Pokedex',
+      languages: ['assets/svg/html.svg', 'assets/svg/scss.svg', 'assets/svg/ts.svg', 'assets/svg/angular.svg']
+    },
   ];
 
   constructor() { }
