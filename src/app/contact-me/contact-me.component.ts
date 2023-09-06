@@ -11,10 +11,10 @@ export class ContactMeComponent implements OnInit {
       name: 'Linkedln', url: 'https://www.linkedin.com/in/guido-martinez-631641169/', img: 'assets/images/linkedin.svg', target: '_blank'
     },
     {
-      name: 'Correo', url: 'mailto:guidomarmor1@gmail.com', img: 'assets/images/gmail.png', target: '_self'
+      name: 'Correo', url: 'mailto:morilloj723@gmail.com', img: 'assets/images/gmail.png', target: '_self'
     },
     {
-      name: 'Fiverr', url: '', img: 'assets/images/fiverr.svg', target: '_blank'
+      name: 'Workana', url: 'https://www.workana.com/freelancer/69a44fb561363066530192b752f097de', img: 'assets/images/workana.png', target: '_blank'
     },
   ];
 

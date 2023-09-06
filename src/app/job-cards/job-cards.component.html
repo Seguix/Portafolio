@@ -2,11 +2,11 @@
 <div fxLayout="column" fxLayoutAlign="center center">
     <div fxFlex="0 1 calc(100% - 80px)" style="overflow: hidden;">
         <div fxLayout="row wrap" fxLayoutAlign="center center" fxLayoutGap="40px grid" fxLayoutGap.sm="20px grid" fxLayoutGap.xs="0">
-            <div *ngFor="let project of projects" fxFlex="25" fxFlex.md="33" fxFlex.sm="45" fxFlex.xs="100" fxLayout="column" class="card">
+            <div *ngFor="let project of projects" fxLayoutAlign="stretch" fxFlex="25" fxFlex.md="33" fxFlex.sm="45" fxFlex.xs="100" fxLayout="column" class="card">
                 <div fxLayout="column" class="img-container">
                     <img [src]="project.img" [alt]="project.name" class="img-card">
                     <div class="languages">
-                        <span class="span-languages">Lenguajes Utilizados:</span>
+                        <span class="span-languages">Tecnologías Utilizadas:</span>
                         <div fxLayoutAlign="center center">
                             <img *ngFor="let language of project.languages" [src]="language" [alt]="language" class="language">
                         </div>
@@ -14,9 +14,11 @@
                 </div>
                 <div class="container">
                   <h4 class="title-card"><b>{{project.name}}</b></h4>
-                  <p class="description-card">{{project.description}}</p>
-                  <div fxLayoutAlign="space-between center">
-                    <a [href]="project.repo" target="_blank" class="button-card button-code"><b>Código</b></a>
+                  <div [style.height.px]="120" style="overflow: hidden;">
+                      <p class="description-card">{{project.description}}</p>
+                  </div>
+                  <div [fxLayoutAlign]="project.repo ? 'space-between center' : 'start center'">
+                    <a *ngIf="project.repo" [href]="project.repo" target="_blank" class="button-card button-code"><b>Código</b></a>
                     <a [href]="project.url" target="_blank" class="button-card button-project"><b>Ver proyecto</b></a>
                   </div>
                 </div>
